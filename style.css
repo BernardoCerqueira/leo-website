@@ -121,6 +121,23 @@ p{
     transform: rotate(2deg);
 }
 
+.gallery__img-wrapper::after{
+    content: "";
+    background-color: var(--color-blue);
+    border: 0.15rem dashed var(--color-background);
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100px;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.gallery__img-wrapper:nth-child(even)::after{
+    left: 1rem;
+}
+
 .gallery{
     margin: 3rem auto;
 }
